@@ -4,17 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
+    <link rel="icon" href="./img/8-removebg-preview.png">
     <title>Claumarie</title>
 </head>
 <body>
+  
+
+  <div class="d-flex flex-column justify-content-center w-100 h-100">
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <div class="btn-group my-5">
+      </div>
+
+    </div>
+  </div>
+
+
     <nav>
         <div class="nav-left">
-            <img src="/img/8-removebg-preview.png">
+            <img src="./img/8-removebg-preview.png">
         </div>
         <div class="nav-center">
-            <a href="Noticias">Noticias</a>
-            <a href="Discord">Discord</a>
-            <a href="Sobre">Sobre</a>
+            <a href="Noticias">Noticias
+              <div class="lin-a"></div>
+            </a>
+            <a href="Discord">Discord
+              <div class="lin-a"></div>
+            </a>
+            <a href="Sobre">Sobre
+              <div class="lin-a"></div>
+            </a>
         </div>
         <div class="nav-rigth">
             <button>
@@ -29,19 +47,19 @@
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade">
       <div class="numbertext">1 / 3</div>
-      <img src="img1.jpg" style="width:100%">
+      <img src="./img/slideshow.png" style="width:100%">
       <div class="text">Caption Text</div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">2 / 3</div>
-      <img src="img2.jpg" style="width:100%">
+      <img src="./img/slideshow.png" style="width:100%">
       <div class="text">Caption Two</div>
     </div>
   
     <div class="mySlides fade">
       <div class="numbertext">3 / 3</div>
-      <img src="img3.jpg" style="width:100%">
+      <img src="./img/slideshow.png" style="width:100%">
       <div class="text">Caption Three</div>
     </div>
   
@@ -57,7 +75,53 @@
     <span class="dot" onclick="currentSlide(2)"></span>
     <span class="dot" onclick="currentSlide(3)"></span>
   </div>
+
+  <div class="content-lin">
+    <div class="lin"></div>
+  </div>
+
+  <div class="content-card-news">
+    <div class="card-news">
+      <div class="card-img">
+        <img src="img\claumarie-removebg-preview.png">
+      </div>
+      <div class="card-text">
+        A Claumarie é uma empresa fundada com a intenção de revolucionar jogos com seus jeito unico de pensar,
+        foco estar sempre fazer o melhor, porem lembre-se que o melhor nem sempre está em primeiro!
+      </div>
+    </div>
+  </div>
+
     </main>
+
+    <footer>
+      <div class="content-footer">
+        <div class="form">
+          <div class="lin">
+            <h3>Receba todas nossas novidades</h3>
+          </div>
+          <div class="lin">
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="lin">
+            <input type="text" placeholder="Nome" required>
+          </div>
+          <div class="lin">
+            <button>Enviar</button>
+          </div>
+        </div>
+        <div class="social-medias">
+          <div class="social-titles">
+            <h2>Acesse nossas redes sociais</h2>
+          </div>
+          <div class="social-icons">
+            <img src="./img/instagram-icon.png">
+            <img src="./img/facebook-icon.png">
+            <img src="./img/youtube-icon.png">
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="js/carousel.js"></script>
 </body>

@@ -11,6 +11,14 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+function timesShow(){
+  setInterval(function() {
+    plusSlides(1)
+  }, 5000);
+}
+
+// timesShow();
+
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
