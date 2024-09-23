@@ -4,10 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-html, body{
-
-}
-
 body {
 	background: linear-gradient(-45deg, #52c2ee, #6debfc, #23a6d5, #021bff);
 	background-size: 400% 400%;
@@ -324,6 +320,10 @@ footer .content-footer{
 
   footer .content-footer{
     display: grid;
+  }
+
+  footer .content-footer .social-medias{
+    margin-top: 20px;
   }
 
 }
