@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* VARIAVEIS */
+
+:root{
+    --blue-color: #0B5BB4;
+    --gray-color: #2c2c2c;
+    --transition-time: 300ms;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background: url("/img/background_calaxia.png") no-repeat;
+    background-size: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-login{
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    border-top: solid 8px var(--blue-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.title, .lin{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
