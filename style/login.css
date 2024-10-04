@@ -16,9 +16,23 @@ html, body{
     height: 100%;
 }
 
-body{
-    background: url("/img/background_calaxia.png") no-repeat;
-    background-size: 100%;
+body {
+	background: linear-gradient(-45deg, #42558C, #417FA6, #3791A6, #34BFBF);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 main{
@@ -38,7 +52,9 @@ main{
 }
 
 .form-login{
-    width: 300px;
+    width: 600px;
+    min-width: 200px;
+    margin: 10px;
     height: 400px;
     background-color: white;
     border-radius: 15px;
@@ -47,11 +63,60 @@ main{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    box-shadow: 0px 0px 10px 1px black;
 }
 
-.title, .lin{
+@media (max-width: 300px){
+    .form-login{
+        box-shadow: none;
+        background-color: transparent;
+        border-top: none;
+    }
+}
+
+.title, .lin, .text-cont, .content-button{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.lin input{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 233);
+    border: none;
+    outline: none;
+    transition: var(--transition-time);
+}
+
+.lin input:focus{
+    /* border: 2px solid var(--blue-color); */
+    box-shadow: 0px 0px 10px 1px rgb(0, 238, 255);
+    transition: var(--transition-time);
+}
+
+.text-cont a{
+    color: var(--blue-color);
+    text-decoration: none;
+}
+
+.content-button button{
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--blue-color);
+    color: white;
+    font-weight: bold;
+    transition: var(--transition-time);
+}
+
+.content-button button:hover{
+    transition: var(--transition-time);
+    background-color: aqua;
 }
